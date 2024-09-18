@@ -3,8 +3,11 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
-/obj
-.obj
+.idea/
+obj/
+
+#/obj
+#.obj
 
 # User-specific files
 *.rsuser
