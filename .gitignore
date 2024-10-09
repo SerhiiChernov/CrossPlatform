@@ -5,6 +5,7 @@
 
 .idea/
 obj/
+.bak
 
 #/obj
 #.obj
