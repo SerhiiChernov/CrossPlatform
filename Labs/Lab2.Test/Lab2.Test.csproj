@@ -18,7 +18,6 @@
 
     <ItemGroup>
       <ProjectReference Include="..\Lab2\Lab2.csproj" />
-      <ProjectReference Include="..\Labs\Lab2\Lab2.csproj" />
     </ItemGroup>
 
 </Project>
