@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "Лабораторна робота 1: шеренга";
+}
+
+<h2>Завдання Лабораторної роботи 1: шеренга</h2>
+
+<p>
+    Потрібно визначити, скільки груп по три особи може бути сформовано із вихідної шеренги.
+</p>
+
+<p>
+    <strong>Приклад введення даних:</strong><br />
+    Вхідні дані:
+    <pre>
+    10
+    </pre>
+</p>
+
+<p>
+    Вхідний файл INPUT.TXT містить єдине ціле число N - кількість солдатів у шерензі (0 ≤ N ≤ 1018).
+</p>
+
+<p>
+    <strong>Завдання:</strong><br />
+    Потрібно визначити, скільки груп по три особи може бути сформовано із вихідної шеренги.
+</p>
+
+<form asp-action="RunLab1" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="file">Виберіть файл для завантаження:</label>
+        <input type="file" id="file" name="file" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Завантажити та виконати</button>
+</form>
+
+@if (ViewData["Result"] != null)
+{
+    <div class="alert alert-success">
+        <strong>Результат обробки:</strong>
+        <pre>@ViewData["Result"]</pre>
+    </div>
+}
+

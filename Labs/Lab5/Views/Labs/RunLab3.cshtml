@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "Лабораторна робота 3: дістатися до певного, фінішного вузла першим";
+}
+
+<h2>Завдання Лабораторної роботи 3: дістатися до певного, фінішного вузла першим</h2>
+
+<p>
+    Визначити мінімальну необхідну кількість ходів щоб дістатися до фінішного вузла першим.
+</p>
+
+<p>
+    <strong>Приклад введення даних:</strong><br />
+    Вхідні дані:
+    <pre>
+    3
+    0 0
+    0 1
+    0 2
+    </pre>
+</p>
+
+<p>
+    Вхідні дані:
+    - У першому рядку вхідного файлу INPUT.TXT знаходиться N – число елементів множини S. 2 ≤ N ≤ 1000.
+    - У наступних N рядках знаходяться координати вузлів із цієї множини – цілі числа Xi, Yi (−109 ≤ Xi, Yi ≤ 109).
+</p>
+
+
+<form asp-action="RunLab3" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="file">Виберіть файл для завантаження:</label>
+        <input type="file" id="file" name="file" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Завантажити та виконати</button>
+</form>
+
+@if (ViewData["Result"] != null)
+{
+    <div class="alert alert-success">
+        <strong>Результат обробки:</strong>
+        <pre>@ViewData["Result"]</pre>
+    </div>
+}
